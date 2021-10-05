@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { updateTitle } from './../actions/titleActions';
 
 const TitleForm = (props) => {
     const [newTitleText, setNewTitleText] = useState();

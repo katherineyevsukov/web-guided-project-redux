@@ -21,7 +21,7 @@ const Title = (props) => {
       {
         !props.editing ? 
           <TitleDisplay />: 
-          <TitleForm handleTitleUpdate={handleTitleUpdate}/>
+          <TitleForm />
       }
     </div>
   );
