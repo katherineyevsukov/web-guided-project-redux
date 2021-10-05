@@ -34,7 +34,6 @@ const Title = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  // console.log('current state: ', state);
   return({
     appName: state.appName,
     title: state.title,
