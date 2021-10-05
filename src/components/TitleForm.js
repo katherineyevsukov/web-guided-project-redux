@@ -10,8 +10,7 @@ const TitleForm = (props) => {
     };
 
     const handleSubmit = ()=> {
-      console.log("titleForm: ", props);
-        // props.handleTitleUpdate(newTitleText);
+      props.dispatch(updateTitle(newTitleText));
     }
     
     return(<div>
