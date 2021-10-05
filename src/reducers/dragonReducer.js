@@ -17,8 +17,11 @@ export const initialState = {
 
 const reducer = (state = initialState, action)=> {
     switch(action.type) {
-        case(ADD_MEMBER):
-            return state;
+        case ADD_MEMBER:
+            return {
+                ...state,
+                members: [...state.members, {name:action.payload, dragonStatus: false}]
+            };
         default:
             return state;
     }
