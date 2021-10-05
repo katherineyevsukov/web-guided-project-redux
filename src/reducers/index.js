@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import { dragonListReducer } from './dragonListReducer';
+import { dragonReducer } from './dragonListReducer';
 import { titleReducer } from './titleReducer';
 
 export const rootReducer = combineReducers({
-  dragonListReducer,
+  dragonReducer,
   titleReducer
 });
