@@ -33,7 +33,8 @@ const Title = (props) => {
   );
 };
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
+  console.log('current state: ', state);
   return({
     name:"Warren",
     age: 33
