@@ -5,13 +5,14 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 // import titleReducer from './reducers/titleReducer';
-import dragonReducer from './reducers/dragonReducer';
+// import dragonReducer from './reducers/dragonReducer';
+import reducer from './reducers';
 
 import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
 
-const store = createStore(dragonReducer);
+const store = createStore(reducer);
 
 function App() {
   return (
