@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 
 const TitleDisplay = (props)=> {
   const handleClick = () => {
-    console.log(props);
-    props.toggleEditing();
+    console.log('props', props);
+    toggleEditing();
   }
 
   return(<h2>
