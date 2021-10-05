@@ -15,7 +15,7 @@ export const initialState = {
 //      - ADD_MEMBER case: return members with a new member added
 //      - default case: return state
 
-const reducer = (state = initialState, action)=> {
+const dragonReducer = (state = initialState, action)=> {
     switch(action.type) {
         case ADD_MEMBER:
             return {
@@ -29,4 +29,4 @@ const reducer = (state = initialState, action)=> {
 }
 
 //3. export out our reducer
-export default reducer;
+export default dragonReducer;
