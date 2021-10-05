@@ -40,8 +40,8 @@ const mapStateToProps = () => {
   });
 }
 
-// export default connect(mapStateToProps)(Title);
-export default Title;
+export default connect(mapStateToProps)(Title);
+// export default Title;
 //connect(mapStateToProps, mapActionsToProps)(component)
 //mapStateToProps : a function that allows us to inject redux state into a component's props
 //mapActionsToProps : a object that contains action creator functions. These functions are injected into props AND are automatically dispatched when executed.

@@ -15,7 +15,7 @@ const store = createStore(titleReducer);
 function App() {
   return (
     <div className="App">
-      <Title />
+      <Title propDrilled="this thing here"/>
       <DragonList />
     </div>
   );
