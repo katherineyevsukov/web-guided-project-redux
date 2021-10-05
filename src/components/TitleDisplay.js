@@ -18,7 +18,7 @@ const TitleDisplay = (props)=> {
 
 const mapStateToProps = (state)=> {
   return {
-    title: state.title
+    title: state.titleState.title
   }
 }
 
