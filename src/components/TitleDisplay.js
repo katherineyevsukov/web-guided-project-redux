@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 const TitleDisplay = (props)=> {
   const handleClick = () => {
-    toggleEditing();
+    props.toggleEditing();
   }
 
   return(<h2>
