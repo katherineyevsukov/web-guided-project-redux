@@ -2,6 +2,6 @@
 export const ADD_MEMBER = "ADD_MEMBER";
 
 //2. create and export our action creator function
-export addMember = () => {
-    return ({type:ADD_MEMBER, })
+export addMember = (name) => {
+    return ({type:ADD_MEMBER, payload:name})
 }
