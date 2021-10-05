@@ -1,8 +1,8 @@
 export const initialState = {
-    appName: "Redux Test",
-    title: "Dragon Member List 🐲",
-    editing: false
-  };
+  appName: "Redux Test",
+  title: "Dragon Member List 🐲",
+  editing: false
+};
   
 const titleReducer = (state = initialState, action) => {
   switch (action.type) {
