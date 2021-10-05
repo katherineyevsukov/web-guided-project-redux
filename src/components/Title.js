@@ -23,7 +23,7 @@ const Title = (props) => {
 
   return (
     <div>
-      <h1>{state.appName}</h1>
+      <h1>{props.appName}</h1>
       {
         !state.editing ? 
           <TitleDisplay title={state.title} dispatch={dispatch} handleToggleEditing={handleToggleEditing}/>: 
@@ -34,7 +34,7 @@ const Title = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log('current state: ', state);
+  // console.log('current state: ', state);
   return({
     appName: state.appName,
     title: state.title,
