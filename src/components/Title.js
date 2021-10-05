@@ -36,8 +36,9 @@ const Title = (props) => {
 const mapStateToProps = (state) => {
   console.log('current state: ', state);
   return({
-    name:"Warren",
-    age: 33
+    appName: state.appName,
+    title: state.title,
+    editing: state.editing
   });
 }
 
