@@ -14,6 +14,12 @@ export const initialState = {
 //      - default case: return state
 
 const reducer = (state = initialState, action)=> {
+    switch(action.type) {
+        case(ADD_MEMBER):
+            return state;
+        default:
+            return state;
+    }
 
 }
 
