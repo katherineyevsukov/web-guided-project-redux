@@ -9,8 +9,6 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-  console.log(props);
-
   const handleTitleUpdate = (title) => {
     props.dispatch(updateTitle(title));
   }

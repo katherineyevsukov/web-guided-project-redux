@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import { updateTitle } from './../actions/titleActions';
 
 const TitleForm = (props) => {
@@ -9,7 +10,7 @@ const TitleForm = (props) => {
     };
 
     const handleSubmit = ()=> {
-      console.log(props);
+      console.log("titleForm: ", props);
         // props.handleTitleUpdate(newTitleText);
     }
     
