@@ -20,6 +20,8 @@ class DragonList extends React.Component {
   }
 
   render() {
+    console.log("props: ", this.props);
+
     return (
       <div>
         <div className="friends-list">
@@ -40,7 +42,9 @@ class DragonList extends React.Component {
 }
 
 const mapStateToProps = (state)=> {
-
+  return {
+    members: state.members
+  }
 }
 
-export default connect()(DragonList);
+export default connect(mapStateToProps)(DragonList);
