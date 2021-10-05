@@ -4,8 +4,8 @@ import dragonReducer from './dragonReducer';
 import titleReducer from './titleReducer';
 
 const rootReducer = combineReducers({
-  dragonReducer,
-  titleReducer
+  dragonState:dragonReducer,
+  titleState:titleReducer
 });
 
 export default rootReducer;
