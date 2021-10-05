@@ -1,3 +1,5 @@
+import { ADD_MEMBER } from './../actions/dragonActions';
+
 //1. initialState related to our dragonMember UI.
 //      - members: array of member object { name: 'Jojo Zhang', dragonStatus: true }
 
