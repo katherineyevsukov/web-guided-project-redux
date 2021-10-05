@@ -9,10 +9,6 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-  // console.log('props: ', props);
-
-  // const [state, dispatch] = useReducer(titleReducer, initialState);
-
   const handleToggleEditing = () => {
     // dispatch(toggleEditing());
   }
@@ -42,6 +38,7 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(Title);
+
 // export default Title;
 //connect(mapStateToProps, mapActionsToProps)(component)
 //mapStateToProps : a function that allows us to inject redux state into a component's props
