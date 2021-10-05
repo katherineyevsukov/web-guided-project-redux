@@ -21,4 +21,4 @@ const mapStateToProps = (state)=> {
   }
 }
 
-export default connect()(TitleDisplay);
+export default connect(mapStateToProps)(TitleDisplay);
