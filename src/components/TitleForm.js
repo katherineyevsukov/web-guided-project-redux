@@ -10,7 +10,7 @@ const TitleForm = (props) => {
     };
 
     const handleSubmit = ()=> {
-      props.dispatch(updateTitle(newTitleText));
+      props.updateTitle(newTitleText);
     }
     
     return(<div>
@@ -28,4 +28,4 @@ const TitleForm = (props) => {
         </div>);
 }
 
-export default connect()(TitleForm);
+export default connect(null, { updateTitle })(TitleForm);
