@@ -11,14 +11,15 @@ import DragonList from './components/DragonList';
 import './styles.css';
 
 const store = createStore(titleReducer);
-console.log(store.getState());
 
 function App() {
   return (
-    <div className="App">
-      <Title />
-      <DragonList />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Title />
+        <DragonList />
+      </div>
+    </Provider>
   );
 }
 
