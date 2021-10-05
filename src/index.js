@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 
 // import titleReducer from './reducers/titleReducer';
 // import dragonReducer from './reducers/dragonReducer';
-import reducer from './reducers';
+import rootReducer from './reducers';
 
 import Title from './components/Title';
 import DragonList from './components/DragonList';
