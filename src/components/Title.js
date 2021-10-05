@@ -14,19 +14,19 @@ const Title = (props) => {
   // const [state, dispatch] = useReducer(titleReducer, initialState);
 
   const handleToggleEditing = () => {
-    dispatch(toggleEditing());
+    // dispatch(toggleEditing());
   }
 
   const handleTitleUpdate = (title) => {
-    dispatch(updateTitle(title));
+    // dispatch(updateTitle(title));
   }
 
   return (
     <div>
       <h1>{props.appName}</h1>
       {
-        !state.editing ? 
-          <TitleDisplay title={state.title} dispatch={dispatch} handleToggleEditing={handleToggleEditing}/>: 
+        !props.editing ? 
+          <TitleDisplay title={props.title} dispatch={dispatch} handleToggleEditing={handleToggleEditing}/>: 
           <TitleForm dispatch={dispatch} handleTitleUpdate={handleTitleUpdate}/>
       }
     </div>
